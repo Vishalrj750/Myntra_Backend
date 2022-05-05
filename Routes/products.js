@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.json([]));
 
+app.post('/products', productsController.createAllProducts);
 app.get('/products', productsController.getAllProducts);
 
 module.exports = app;

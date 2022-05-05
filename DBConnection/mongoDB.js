@@ -7,7 +7,7 @@ class mongo {
     }
 
     connectToMongoDB() {
-        mongoose.connect('mongodb://localhost:27017/myntra');
+        mongoose.connect('mongodb+srv://vishal:vishal12345@cluster0.mjbw6.mongodb.net/test');
         mongoose.connection.once('open', () => {
             console.log('MongoDB connection successful');
         });

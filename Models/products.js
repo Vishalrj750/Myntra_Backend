@@ -6,10 +6,10 @@ const product = new mongoose.Schema({
             "size": { type: String, required: true },
             "title": { type: String, required: true },
             "price": { type: Number, required: true },
-            "gender": { type: Number, required: true },
+            "gender": { type: String, required: true },
             "description": { type: String, required: true },
             "brand": { type: String, required: true },
-            "color": { type: String, required: true },
+            "color": { type: String },
             "discount": { type: Number, required: true },
             "off_price": { type: Number, required: true },
             "images": {
